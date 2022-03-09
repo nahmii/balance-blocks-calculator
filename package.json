@@ -1,0 +1,32 @@
+{
+  "name": "@nahmii/balance-blocks-calculator",
+  "version": "1.0.0",
+  "description": "Balance blocks calculator",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint --ignore-path .gitignore .",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "nyc mocha 'src/**/*.spec.js' --all",
+    "test:no-coverage": "mocha 'src/**/*.spec.js' --all"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name" : "Jon K. Bernhardsen"
+    },
+    {
+      "name": "Jens Ivar Jørdre",
+      "email": "jensivar@nahmii.io"
+    }
+  ],
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bn.js": "^5.2.0"
+  },
+  "devDependencies": {
+    "@nahmii/eslint-config": "github:nahmii/eslint-config",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0"
+  }
+}
